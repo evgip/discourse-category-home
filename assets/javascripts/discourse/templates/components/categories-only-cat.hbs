@@ -1,0 +1,63 @@
+{{#if categories}}
+
+ {{if showTopics 'with-topics'}}
+   
+ {{#each categories as |c|}}
+
+<div data-category-id={{c.id}} class="{{if c.description_excerpt 'has-description' 'no-description'}} {{if c.uploaded_logo.url 'has-logo' 'no-logo'}}">
+         
+             
+         {{#if c.is_private}}
+        
+
+         <h3 id="ember1144" class="ember-view">
+         {{replace-emoji (i18n 'private_categories.cat_name' name=c.name)}}
+         </h3>
+
+         <span class="category-description">
+           {{{dir-span c.description_excerpt}}}
+         </span>    
+
+         
+          <div class="cat-private">
+           {{#if currentUser}}
+                    <p>{{replace-emoji (i18n 'private_categories.you_need_to_request_access')}}</p>
+                    <a rel='nofollow' class='btn btn-small btn-primary' href='/groups'>
+                      <i class='fa fa-user-plus'></i>
+                      {{i18n 'private_categories.request_access_button'}}<br/>
+                    </a>
+                  {{else}}
+                    <p>{{replace-emoji (i18n 'private_categories.you_need_to_sign_in')}}</p>
+              {{/if}}
+                      
+            </div>
+            
+            {{else}}
+
+             {{category-title-link-cat category=c}}
+           <span class="category-description">
+             {{{dir-span c.description_excerpt}}}
+           </span>
+      {{/if}}   
+              
+        
+            {{#if c.subcategories}}
+              <div class='subcategories'>
+                      {{#each c.subcategories as |s|}}
+                  <span class='subcategory'>
+                    {{category-title-before category=s}}
+                    {{category-link s hideParent="true"}}
+                    {{category-unread category=s}}
+                  </span>
+                {{/each}}    
+     
+              </div>
+            {{/if}}
+
+       
+     
+</div>      
+{{/each}}
+      
+
+{{/if}}
