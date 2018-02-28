@@ -6,7 +6,7 @@
 
 <div data-category-id={{c.id}} class="{{if c.description_excerpt 'has-description' 'no-description'}} {{if c.uploaded_logo.url 'has-logo' 'no-logo'}}">
          
-             
+
          {{#if c.is_private}}
         
 
@@ -14,9 +14,9 @@
          {{replace-emoji (i18n 'private_categories.cat_name' name=c.name)}}
          </h3>
 
-         <span class="category-description">
+         <div class="category-description">
            {{{dir-span c.description_excerpt}}}
-         </span>    
+         </div>    
 
          
           <div class="cat-private">
@@ -35,9 +35,9 @@
             {{else}}
 
              {{category-title-link-cat category=c}}
-           <span class="category-description">
+           <div class="category-description">
              {{{dir-span c.description_excerpt}}}
-           </span>
+           </div>
       {{/if}}   
               
         
@@ -54,10 +54,14 @@
               </div>
             {{/if}}
 
-       
-     
-</div>      
+</div>            
+ 
+       <div class='stats' title={{c.statTitle}}>{{{c.stat}}}
+	<br>
+	<small>вопросов</small>
+	</div>
+	
+  
 {{/each}}
-      
 
 {{/if}}
