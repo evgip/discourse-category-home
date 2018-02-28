@@ -1,5 +1,5 @@
-# name: private-categories
-# about: Show private categories in category list and allow requesting access
+# name: category
+# about: Category list
 # version: 0.0.1
 # authors: Evg
 
