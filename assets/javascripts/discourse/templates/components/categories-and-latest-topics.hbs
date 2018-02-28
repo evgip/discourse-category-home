@@ -1,7 +1,13 @@
-<div class='column categories'>
-  {{categories-only categories=categories}}
+<div class='cat-cat'>
+  
+<div class='cat-zag'><h1 class='t1'>{{i18n 'categories.category'}}</h1></div>
+
+<div class='colon cat-cat'>
+  {{categories-only-cat categories=categories}}
 </div>
 
-<div class='column'>
+<div class='colon post'>
   {{latest-topic-list-cat topics=topics}}
+</div>
+  
 </div>
