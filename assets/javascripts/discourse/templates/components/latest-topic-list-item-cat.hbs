@@ -2,13 +2,9 @@
 <div class='telohome'>
   
  <div class='avacat'>
-  {{#user-link user=topic.lastPoster}}
-    {{avatar topic.lastPoster imageSize="large"}}
-  {{/user-link}}
+  {{#user-link user=topic.lastPoster}}{{avatar topic.lastPoster imageSize="large"}}{{/user-link}}
    
-    {{topic.last_poster_username}} в {{category-link topic.category}} 
-    
-     ответ дан  <a href="{{topic.lastPostUrl}}" title="{{topic.bumpedAtTitle}}">{{format-date topic.bumpedAt format="tiny" noTitle="true"}}</a>
+   <a href="{{topic.lastPostUrl}}" title="{{topic.bumpedAtTitle}}">ответ дан {{format-date topic.bumpedAt format="tiny" noTitle="true"}}</a>
     
 </div>
   
@@ -19,12 +15,6 @@
       {{topic-featured-link topic}}
     {{/if}}
     {{topic-post-badges newPosts=topic.totalUnread unseen=topic.unseen url=topic.lastUnreadUrl}}
-  </div>
-  
-  {{raw "list/topic-excerpt" topic=topic}} 
-  
-  <div class='creator'>  
-  {{discourse-tags topic mode="list"}}
   </div>
   
 </div>
