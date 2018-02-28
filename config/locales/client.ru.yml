@@ -1,0 +1,8 @@
+ru:
+  js:
+    private_categories:
+      this_category_is_private: "Приватный раздел."
+      you_need_to_sign_in: "Чтобы запросить доступ, вначале войдите в систему."
+      you_need_to_request_access: "Это приватный раздел. Для просмотра вам нужно присоединиться к группе."
+      request_access_button: "Присоединиться"
+      cat_name: "{{name}}"
