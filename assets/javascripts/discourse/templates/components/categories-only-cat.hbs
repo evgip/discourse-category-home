@@ -14,14 +14,12 @@
          {{replace-emoji (i18n 'private_categories.cat_name' name=c.name)}}
          </h3>
 
-         <div class="category-description">
-           {{{dir-span c.description_excerpt}}}
-         </div>    
+     
 
          
           <div class="cat-private">
            {{#if currentUser}}
-                    <p>{{replace-emoji (i18n 'private_categories.you_need_to_request_access')}}</p>
+                    <p>{{{dir-span c.description_excerpt}}} {{replace-emoji (i18n 'private_categories.you_need_to_request_access')}}</p>
                     <a rel='nofollow' class='btn btn-small btn-primary' href='/groups'>
                       <i class='fa fa-user-plus'></i>
                       {{i18n 'private_categories.request_access_button'}}<br/>
