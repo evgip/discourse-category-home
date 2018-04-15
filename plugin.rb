@@ -7,10 +7,14 @@ enabled_site_setting :show_private_categories
 
 after_initialize do
 
+  # add info category
+  add_to_serializer(:basic_category, :categorization, false) { object.custom_fields['categorization'] }
+  
   Category.class_eval do
     attr_accessor :is_private
   end
 
+    
   CategoryDetailedSerializer.class_eval do
     attributes :is_private
 
