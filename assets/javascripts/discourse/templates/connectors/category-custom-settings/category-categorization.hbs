@@ -1,14 +1,8 @@
-<section class='field'>
-  <label>
-    Дополнение: 
-    {{d-editor class="d-editor-input ember-text-area ember-view" value=category.custom_fields.categorization}}
-  </label>
+<label>Дополнение:</label>
   
-  <div class="d-editor-textarea-wrapper">
+<div class="d-editor-textarea-wrapper">
     {{conditional-loading-spinner condition=loading}}
-    {{textarea tabindex=tabindex value=value class="d-editor-input" placeholder=placeholderTranslated}}
+    {{textarea tabindex=tabindex value=category.custom_fields.categorization class="d-editor-input" placeholder=placeholderTranslated}}
     {{popup-input-tip validation=validation}}
-  </div>
-  
-  
-</section>
+</div>
+<br><br>  
