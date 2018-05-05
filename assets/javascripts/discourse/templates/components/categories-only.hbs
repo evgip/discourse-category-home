@@ -18,39 +18,14 @@
            
            <div>
 
-              
-         {{#if c.is_private}}
-         <h3 id="ember1144" class="ember-view">
-         {{replace-emoji (i18n 'private_categories.cat_name' name=c.name)}}
-         </h3>
-             
-                   
-             
-          <div class="cat-private">
-           {{#if currentUser}}
-                    <p>{{{dir-span c.description_excerpt}}} {{replace-emoji (i18n 'private_categories.you_need_to_request_access')}}</p>
-                    <a rel='nofollow' class='btn btn-small btn-primary' href='/groups'>
-                      <i class='fa fa-user-plus'></i>
-                      {{i18n 'private_categories.request_access_button'}}<br/>
-                    </a>
-                  {{else}}
-                    <p>{{replace-emoji (i18n 'private_categories.you_need_to_sign_in')}}</p>
-              {{/if}}
-                      
-            </div>
             
-            {{else}}
 
              {{category-title-link category=c}}
            <div class="category-description">
              {{{dir-span c.description_excerpt}}}
            </div>
-      {{/if}}   
-              
-              
-              
-              
-              
+       
+
               <div class="clearfix"></div>
             </div>
             {{#if c.subcategories}}
@@ -71,18 +46,18 @@
          
           
           <td class="topics">
-          {{#if c.is_private}}  {{else}} 
+           
             <div title={{c.statTitle}}>{{{c.stat}}}</div>
             {{category-unread category=c tagName="div" class="unread-new"}}
-             {{/if}}
+             
           </td>
           {{#if showTopics}}
             <td class="latest">
-            {{#if c.is_private}}  {{else}} 
+             
               {{#each c.featuredTopics as |t|}}
                 {{featured-topic topic=t latestTopicOnly=latestTopicOnly}}
               {{/each}}
-               {{/if}}
+               
             </td>
           {{/if}}
         </tr>
