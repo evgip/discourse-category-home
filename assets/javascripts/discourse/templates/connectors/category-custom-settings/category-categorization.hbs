@@ -1,9 +1,9 @@
 <label>Дополнение:</label>
   
-<div class="d-editor-textarea-wrapper">
+<div class="d-editor-textarea-wrapper-info">
     {{conditional-loading-spinner condition=loading}}
     {{textarea tabindex=tabindex value=category.custom_fields.categorization class="d-editor-input" placeholder=placeholderTranslated}}
-    
+    <br>---ссылки---<br>
     {{textarea tabindex=tabindex value=category.custom_fields.categorqa class="d-editor-input" placeholder=placeholderTranslated}}
     
     {{popup-input-tip validation=validation}}
