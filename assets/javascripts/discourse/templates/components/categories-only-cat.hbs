@@ -3,7 +3,7 @@
 {{if showTopics 'with-topics'}}
    
 {{#each categories as |c|}}
-
+<div class="cat-glav">
 <div data-category-id={{c.id}} class="{{if c.description_excerpt 'has-description' 'no-description'}} {{if c.uploaded_logo.url 'has-logo' 'no-logo'}}">
          
              {{category-title-link-cat category=c}}
@@ -31,7 +31,7 @@
 	<br>
 	<small>вопросов</small>
 	</div>
-	
+</div>	
 {{/each}}
 
 {{/if}}
