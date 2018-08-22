@@ -1,5 +1,8 @@
 <label>Дополнение:</label>
-  
+<div class="d-editor-textarea-wrapper-info">
+{{d-editor class="d-editor-input ember-text-area ember-view" value=category.custom_fields.categorimg}}
+</div> 
+---в разделе--- 
 <div class="d-editor-textarea-wrapper-info">
     {{conditional-loading-spinner condition=loading}}
     {{textarea tabindex=tabindex value=category.custom_fields.categorization class="d-editor-input" placeholder=placeholderTranslated}}
