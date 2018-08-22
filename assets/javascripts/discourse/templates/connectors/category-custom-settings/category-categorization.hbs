@@ -1,10 +1,15 @@
 <label>Дополнение:</label>
 
----url foto---
-<div class="d-editor-textarea-wrapper-info">
+URL logo
 {{text-field value=category.custom_fields.categorimg}}
+
+TXT cat
+<div class="d-editor-textarea-wrapper-info">
+{{textarea tabindex=tabindex value=category.custom_fields.categortxt class="d-editor-input" placeholder=placeholderTranslated}} 
 </div>
 
+
+ 
 ---в разделе--- 
 <div class="d-editor-textarea-wrapper-info">
     {{conditional-loading-spinner condition=loading}}
@@ -12,7 +17,6 @@
 </div> 
 
 ---ссылки--- 
-
 <div class="d-editor-textarea-wrapper-info">
     {{textarea tabindex=tabindex value=category.custom_fields.categorqa class="d-editor-input" placeholder=placeholderTranslated}}
     
