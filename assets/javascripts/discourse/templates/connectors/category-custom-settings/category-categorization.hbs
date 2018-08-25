@@ -12,14 +12,14 @@ TXT cat
  
 ---Связанны разделы--- 
 <div class="d-editor-textarea-wrapper-info">
-    {{conditional-loading-spinner condition=loading}}
-    {{textarea tabindex=tabindex value=category.custom_fields.categorization class="d-editor-input" placeholder=placeholderTranslated}}
-</div> 
-
----Теги--- 
-<div class="d-editor-textarea-wrapper-info">
     {{textarea tabindex=tabindex value=category.custom_fields.categorqa class="d-editor-input" placeholder=placeholderTranslated}}
     
     {{popup-input-tip validation=validation}}
 </div>
+
+---Теги--- 
+<div class="d-editor-textarea-wrapper-info">
+    {{conditional-loading-spinner condition=loading}}
+    {{textarea tabindex=tabindex value=category.custom_fields.categorization class="d-editor-input" placeholder=placeholderTranslated}}
+</div> 
 <br><br>  
