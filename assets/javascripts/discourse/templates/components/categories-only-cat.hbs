@@ -3,8 +3,11 @@
 
 {{#each categories as |c|}}
 <div class="cat-home">
-{{category-title-link-cat category=c}}
+ 
 <a href="{{{dir-span c.url}}}">	
+
+<div class="cat-title">{{{dir-span c.name}}}</div>
+
 <img src="{{{dir-span c.categorimg}}}" alt="" class="logo-home">	
 </a>	
      <div class="category-description">
