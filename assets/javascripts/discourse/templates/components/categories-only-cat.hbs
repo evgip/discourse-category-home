@@ -1,18 +1,17 @@
 {{#if categories}}
-
 {{if showTopics 'with-topics'}}
-   
+
 {{#each categories as |c|}}
-<div class="cat-glav">
-<div data-category-id={{c.id}} class="{{if c.description_excerpt 'has-description' 'no-description'}} {{if c.uploaded_logo.url 'has-logo' 'no-logo'}}">
-         
-             {{category-title-link-cat category=c}}
-           <div class="category-description">
-             {{{dir-span c.description_excerpt}}}
-           </div>
-          
-     
-            {{#if c.subcategories}}
+<div class="cat-home">
+{{category-title-link-cat category=c}}
+<a href="{{{dir-span c.url}}}">	
+<img src="{{{dir-span c.categorimg}}}" alt="" class="logo-home">	
+</a>	
+     <div class="category-description">
+     {{{dir-span c.description_excerpt}}}
+     </div>
+	
+           {{#if c.subcategories}}
               <div class='subcategories'>
                       {{#each c.subcategories as |s|}}
                   <span class='subcategory'>
@@ -24,15 +23,12 @@
                 {{/each}}    
      
               </div>
-            {{/if}}
-
-</div>            
- 
-       <div data-category-id={{c.id}}  class='stats'> {{{dir-span c.topic_count}}}
-	<br>
-	<small>вопросов</small>
-	</div>
+            {{/if}}	
+	
+	
+	<div class="cat-vopros">{{{dir-span c.topic_count}}} </div>	
+	
 </div>	
-{{/each}}
 
+{{/each}}
 {{/if}}
