@@ -2,13 +2,12 @@
 {{if showTopics 'with-topics'}}
 
 {{#each categories as |c|}}
-<div class="cat-home">
- 
+<div class="cat-home" style="border-left: 4px solid #{{c.color}};">
+<div class="cat-telo">
+
 <a title="{{{dir-span c.name}}}" href="{{{dir-span c.url}}}">	
-
-<div class="cat-title">{{{dir-span c.name}}}</div>
-
-<img src="{{{dir-span c.categorimg}}}" alt="Раздел: {{{dir-span c.name}}}" class="logo-home">	
+<img src="{{{dir-span c.uploaded_logo.url}}}" alt="Раздел: {{{dir-span c.name}}}" class="logo-home">	
+<div class="cat-title">{{{dir-span c.name}}} <sup>{{{dir-span c.topic_count}}} </sup>	</div> 
 </a>	
      <div class="category-description">
      {{{dir-span c.description_excerpt}}}
@@ -27,10 +26,7 @@
      
               </div>
             {{/if}}	
-	
-	
-	<div class="cat-vopros">{{{dir-span c.topic_count}}} </div>	
-	
+	</div>
 </div>	
 
 {{/each}}
