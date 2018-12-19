@@ -2,9 +2,10 @@
 {{if showTopics 'with-topics'}}
 
 {{#each categories as |c|}}
-<div class="cat-home" style="border-left: 4px solid #{{c.color}};">
-<div class="cat-telo">
-
+<div class="cat-home">
+<div class="cat-telo"  style="border-left: 4px solid #{{c.color}};">
+<div class="cat-vn">
+	
 <a title="{{{dir-span c.name}}}" href="{{{dir-span c.url}}}">	
 <img src="{{{dir-span c.uploaded_logo.url}}}" alt="Раздел: {{{dir-span c.name}}}" class="logo-home">	
 <div class="cat-title">{{{dir-span c.name}}} <sup>{{{dir-span c.topic_count}}} </sup>	</div> 
@@ -18,14 +19,18 @@
                       {{#each c.subcategories as |s|}}
                   <span class='subcategory'>
                     {{category-title-before category=s}}
-                    {{category-link s hideParent="true"}}
+		            {{category-link s hideParent="true"}}
                     {{category-unread category=s}}
                   </span>
                 {{/each}}    
      
               </div>
             {{/if}}	
-	</div>
+	
+	
+</div>	
+</div>
+	<hr>
 </div>	
 
 {{/each}}
