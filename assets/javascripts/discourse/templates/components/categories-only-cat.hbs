@@ -18,7 +18,6 @@
                       {{#each c.subcategories as |s|}}
                   <span class='subcategory'>
                     {{category-title-before category=s}}
-		    <img src="{{{s.uploaded_logo.url}}}" class="category-logo-small"> 
                     {{category-link s hideParent="true"}}
                     {{category-unread category=s}}
                   </span>
