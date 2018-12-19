@@ -1,12 +1,5 @@
-<div class='topic-cat  topic-list' style='border-left: 4px solid #{{topic.category.color}};'>
+<div class='topic-cat  topic-list'>
 <div class='telohome'>
-  
- <div class='avacat'>
-  {{#user-link user=topic.lastPoster}}{{avatar topic.lastPoster imageSize="large"}}{{/user-link}}
-   
-   <a href="{{topic.lastPostUrl}}" title="{{topic.bumpedAtTitle}}">время:  {{format-date topic.bumpedAt format="tiny" noTitle="true"}}</a>
-    
-</div>
   
   <div class='title-t'> 
     {{raw "topic-status" topic=topic}}
@@ -16,6 +9,23 @@
     {{/if}}
     {{topic-post-badges newPosts=topic.totalUnread unseen=topic.unseen url=topic.lastUnreadUrl}}
   </div>
-  
+	
+<div class='ava-t'>
+	<div class='avacat'>
+  {{#user-link user=topic.lastPoster}}{{avatar topic.lastPoster imageSize="large"}}{{/user-link}}
+   </div>
+	
+   {{raw "list/topic-excerpt" topic=topic}}
+</div>
+
+<div class="foot">
+<div class="stat">	
+{{d-icon "heart-o"}}   {{number topic.like_count}}  {{d-icon "comment-o"}}   {{number topic.like_count}}  
+
+{{category-link topic.category}} 	{{format-date topic.bumpedAt format="tiny" noTitle="true"}} 
+ </div>
+
+ <div class='date'>   {{discourse-tags topic mode="list" tagsForUser=tagsForUser}} </div>
+</div>
 </div>
 </div> 
