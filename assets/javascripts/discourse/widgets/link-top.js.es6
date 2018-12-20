@@ -24,7 +24,7 @@ export default createWidget('link-top', {
  ava = users[t].avatar_template;
  const avatar_template = ava.replace('{size}', '45');
 
- contents.push( new RawHtml({ html: ` <div class="user-ava"><a href="u/${username}"><img src="${avatar_template}" alt="${username}" width="45" class="logo-ava"><br> ${username}</a></div>`})); 
+ contents.push( new RawHtml({ html: ` <div class="user-ava"><a href="u/${username}/summary"><img src="${avatar_template}" alt="${username}" width="45" class="logo-ava"><br> ${username}</a></div>`})); 
    
  }
  }
