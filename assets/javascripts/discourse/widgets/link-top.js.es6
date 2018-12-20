@@ -19,7 +19,7 @@ export default createWidget('link-top', {
  var users = data.users;
  
  for (var t = 0; t < users.length; t++) {
- if(t >12) break;  
+ if(t >9) break;  
  username = users[t].username;
  ava = users[t].avatar_template;
  const avatar_template = ava.replace('{size}', '45');
