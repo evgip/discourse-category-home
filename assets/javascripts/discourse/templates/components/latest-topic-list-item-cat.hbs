@@ -9,23 +9,21 @@
     {{/if}}
     {{topic-post-badges newPosts=topic.totalUnread unseen=topic.unseen url=topic.lastUnreadUrl}}
   </div>
+    {{format-date topic.bumpedAt format="tiny" noTitle="true"}}	
 	
 <div class='ava-t'>
-	<div class='avacat'>
+   <div class='avacat'>
   {{#user-link user=topic.lastPoster}}{{avatar topic.lastPoster imageSize="large"}}{{/user-link}}
    </div>
-	
    {{raw "list/topic-excerpt" topic=topic}}
 </div>
 
 <div class="foot">
 <div class="stat">	
-{{d-icon "comment-o"}}    {{number topic.replyCount noTitle="true"}}
-
-{{category-link topic.category}} 	{{format-date topic.bumpedAt format="tiny" noTitle="true"}} 
+{{d-icon "comment-o"}} {{number topic.replyCount noTitle="true"}} {{discourse-tags topic mode="list" tagsForUser=tagsForUser}} 
  </div>
 
- <div class='date'>   {{discourse-tags topic mode="list" tagsForUser=tagsForUser}} </div>
+<div class='date'>  {{category-link topic.category}}  </div>
 </div>
 </div>
 </div> 
