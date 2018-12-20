@@ -11,7 +11,7 @@ export default createWidget('link-top', {
   var ava;
  
   $.ajax({
-  url: "/top/daily.json",
+  url: "/top/weekly.json",
   dataType: 'json',
   async: false,
   success: function(data) {
@@ -19,7 +19,7 @@ export default createWidget('link-top', {
  var users = data.users;
  
  for (var t = 0; t < users.length; t++) {
- if(t >8) break;  
+ if(t >12) break;  
  username = users[t].username;
  ava = users[t].avatar_template;
  const avatar_template = ava.replace('{size}', '45');
