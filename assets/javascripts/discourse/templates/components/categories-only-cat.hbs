@@ -7,13 +7,12 @@
 <div class="cat-vn">
 	
 <a title="{{{dir-span c.name}}}" href="{{{dir-span c.url}}}">	
-<img src="{{{dir-span c.uploaded_logo.url}}}" alt="Раздел: {{{dir-span c.name}}}" class="logo-home">	
-<div class="cat-title">{{{dir-span c.name}}} <sup>{{{dir-span c.topic_count}}} </sup>	</div> 
-</a>	
+     <div class="cat-title">{{{dir-span c.name}}}</div>  <div class="cat-num">{{{dir-span c.topic_count}}} </div> 
+	<img src="{{{dir-span c.categorimg}}}" alt="" class="logo-home">	
      <div class="category-description">
-     {{{dir-span c.description_excerpt}}}
+        {{{dir-span c.description_excerpt}}}
      </div>
-	
+</a>	
            {{#if c.subcategories}}
               <div class='subcategories'>
                       {{#each c.subcategories as |s|}}
@@ -23,15 +22,11 @@
                     {{category-unread category=s}}
                   </span>
                 {{/each}}    
-     
               </div>
             {{/if}}	
-	
-	
 </div>	
 </div>
-	<hr>
+<hr>
 </div>	
-
 {{/each}}
 {{/if}}
