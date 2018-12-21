@@ -3,8 +3,8 @@ import RawHtml from 'discourse/widgets/raw-html';
 import { iconHTML } from "discourse-common/lib/icon-library";
 
 let chevron = iconHTML('chevron-right');
-var top_writers =  Discourse.SiteSettings.top_writers;
-var best_theme =  Discourse.SiteSettings.best_theme;
+var top_writers =  I18n.t("top_writers");
+var best_theme =  I18n.t("best_theme");
 
 export default createWidget('link-top', {
   buildKey: (attrs) => 'link-top',
