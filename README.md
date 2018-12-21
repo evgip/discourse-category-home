@@ -14,11 +14,14 @@ Additional fields in category:
 
 <img src="https://toxu.ru/uploads/default/original/2X/f/f42ae7170027be7aa7ff205646c7ce4ede9bf5a8.png" alt="toxu-cat-2">
 
+## Customization
+
+'desktop category page style' - Categories and Latest Topics
 
 ## How to Install this Plugin
 
 To install Discourse Plugin - https://meta.discourse.org/t/install-a-plugin/19157
 
-# License
+## License
 
 MIT
