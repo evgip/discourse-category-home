@@ -3,7 +3,8 @@ import RawHtml from 'discourse/widgets/raw-html';
 import { iconHTML } from "discourse-common/lib/icon-library";
 
 let chevron = iconHTML('chevron-right');
-
+var top_writers =  Discourse.SiteSettings.top_writers;
+var best_theme =  Discourse.SiteSettings.best_theme;
 
 export default createWidget('link-top', {
   buildKey: (attrs) => 'link-top',
@@ -22,7 +23,7 @@ export default createWidget('link-top', {
     
  var users = data.users;
  
- contents.push( new RawHtml({ html: ` <div class="h-home">TOP писатели</div>`})); 
+ contents.push( new RawHtml({ html: ` <div class="h-home">${top_writers}</div>`})); 
   
  
  for (var t = 0; t < users.length; t++) {
@@ -35,7 +36,7 @@ export default createWidget('link-top', {
    
  }
  
-  contents.push( new RawHtml({ html: `<div class="h-home"><br />Лучшие</div>`})); 
+  contents.push( new RawHtml({ html: `<div class="h-home"><br />${best_theme}</div>`})); 
  
  
  var topics = data.topic_list.topics;
