@@ -22,7 +22,7 @@ export default createWidget('link-top', {
     
  var users = data.users;
  
- contents.push( new RawHtml({ html: ` <div class="h-home">TOP писателии</div>`})); 
+ contents.push( new RawHtml({ html: ` <div class="h-home">TOP писатели</div>`})); 
   
  
  for (var t = 0; t < users.length; t++) {
