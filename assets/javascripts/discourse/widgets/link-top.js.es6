@@ -2,7 +2,7 @@ import { createWidget } from 'discourse/widgets/widget';
 import RawHtml from 'discourse/widgets/raw-html';
 import { iconHTML } from "discourse-common/lib/icon-library";
 
-let dot_circle = iconHTML('far-dot-circle');
+let chevron = iconHTML('chevron-right');
 
 
 export default createWidget('link-top', {
@@ -47,7 +47,7 @@ export default createWidget('link-top', {
  title = topics[t].title;
  slug = topics[t].slug;
  
-  contents.push( new RawHtml({ html: ` <div class="h-qa">${dot_circle}  <a href="/t/${slug}">${title}</a></div>`})); 
+  contents.push( new RawHtml({ html: ` <div class="h-qa">${chevron}  <a href="/t/${slug}">${title}</a></div>`})); 
    
  
   }
