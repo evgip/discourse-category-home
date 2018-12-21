@@ -1,4 +1,3 @@
-/*раздел категории*/
 body.navigation-categories {
 background: #f0f3f5;
 .colon.cat-cat {   background: #fff;padding: 15px 20px 15px 0;border-radius: 2px;box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;}  
@@ -29,7 +28,8 @@ h1.cat{margin: 0 0 10px 20px;color: #919191;font-size: 18px;}
 .h-home {clear: both;font-size: 18px;color: #919191;margin: 5px 0 5px 0;}
 .h-qa{clear: both;margin-bottom: 5px;}
 .h-qa a	{font-size: 16px;}
-	
+
+.h-qa svg.fa {color: #919191;}	
 	
 .cat-title{font-size: 16px;padding: 2px 4px;font-weight: 600;position: absolute;color: #fff;margin-left: 5px;background-color: rgba(0,0,0,0.6);}
 .cat-num{padding: 2px 4px;font-size: 16px;float: right;position: absolute;color: #fff;right: 5px;background-color: rgba(0,0,0,0.6);}
@@ -42,4 +42,4 @@ h1.cat{margin: 0 0 10px 20px;color: #919191;font-size: 18px;}
 .stat .fa {color:#667d99;}
 hr {width: 70%;margin-left: 18%;}
 }
-/*end категории*/
+
