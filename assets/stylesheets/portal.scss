@@ -1,4 +1,7 @@
+html:not(.mobile-view) {
+
 body.navigation-categories {
+	
 background: #f0f3f5;
 .colon.cat-cat {   background: #fff;padding: 15px 20px 15px 0;border-radius: 2px;box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;}  
 .title-t {width:80%;float: left;}	
@@ -41,5 +44,7 @@ h1.cat{margin: 0 0 10px 20px;color: #919191;font-size: 18px;}
 .number {margin: 0 10px 0 2px;}
 .stat .fa {color:#667d99;}
 hr {width: 70%;margin-left: 18%;}
+	
 }
 
+}
