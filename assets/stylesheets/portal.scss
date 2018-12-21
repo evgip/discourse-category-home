@@ -43,4 +43,33 @@ h1.cat{margin: 0 0 10px 20px;color: #919191;font-size: 18px;}
 .stat .fa {color:#667d99;}
 hr {width: 70%;margin-left: 18%;}
 	
+.telohome {
+    .badge-category-bg{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0; 
+        width: auto !important;
+        height: auto !important;
+        margin-right:0px !important; 
+    }
+    .badge-wrapper.bullet {
+        margin-right: 0px;
+    }
+    .badge-wrapper.bullet span.badge-category {
+      color: #fff;
+      z-index: 11111;
+      margin: 2px 4px;
+    }
+    .badge-wrapper .badge-category .category-name:hover {
+      color: #fff; 
+    }
+    .badge-wrapper.bullet .d-icon {
+     color: #fff;
+    }
+    
+}	
+	
+	
 }
