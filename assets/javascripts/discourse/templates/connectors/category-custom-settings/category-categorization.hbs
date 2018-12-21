@@ -1,26 +1,24 @@
-<label>Дополнение:</label>
+<label>Addition:</label>
 
-URL logot<br>
+URL large logo<br>
 {{text-field value=category.custom_fields.categorimg}}
 
-Кор. описание<br>
+Short description<br>
 {{text-field value=category.custom_fields.categordiscr}}
 
-TXT cat 
+TXT cat <br>
 <div class="d-editor-textarea-wrapper-info">
 {{textarea tabindex=tabindex value=category.custom_fields.categortxt class="d-editor-input" placeholder=placeholderTranslated}} 
 </div>
 
-
- 
----Связанны разделы--- 
+<br>Related categories<br>
 <div class="d-editor-textarea-wrapper-info">
     {{textarea tabindex=tabindex value=category.custom_fields.categorqa class="d-editor-input" placeholder=placeholderTranslated}}
     
     {{popup-input-tip validation=validation}}
 </div>
 
----Теги--- 
+<br>Tags<br>
 <div class="d-editor-textarea-wrapper-info">
     {{conditional-loading-spinner condition=loading}}
     {{textarea tabindex=tabindex value=category.custom_fields.categorization class="d-editor-input" placeholder=placeholderTranslated}}
