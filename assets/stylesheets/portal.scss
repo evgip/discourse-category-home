@@ -1,0 +1,45 @@
+/*раздел категории*/
+body.navigation-categories {
+background: #f0f3f5;
+.colon.cat-cat {   background: #fff;padding: 15px 20px 15px 0;border-radius: 2px;box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;}  
+.title-t {width:80%;float: left;}	
+.date, .relative-date {float: right;margin-right: 5px;color: #919191;}
+a.title{font-size: 20px;color: #09c;}
+a.title:hover{color:#f56400;}
+.topic-list { background: #fff;    padding: 10px 5px 10px 10px;    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;}
+.foot {display: block;clear:both;padding-top: 5px;}
+.list-controls {background: #fff; padding: 12px 6px 0 0;}
+.ava-t {clear: both;padding-top: 5px;}
+.stat {color:#667d99;display: inline-block;margin: 1px 0px 0px 3px;}
+.categories-and-latest, .categories-and-top {    display: block;}
+.topic-excerpt {display: inline-block;font-size: 1em;width: 90%;margin-top: 0px;}
+.sidebar, .add-qa, .sidebar-right, #scroll-top, #banner {display: none !important;}	
+.telo-qa, .list-container.has-sidebar{border-left:none !important; max-width:100% !important;width:100% !important;margin-left:0px !important;float: left;position:relative;}
+h1.cat{margin: 0 0 10px 20px;color: #919191;font-size: 18px;}
+.colon.cat-cat {float: left;width: 23%;}
+.colon.cat-post {width: 74%;float: left;}
+.colon.post {float: left;margin-left: 20px;}
+.cat-home{margin-bottom: 13px;position: relative;}
+.cat-vn {margin-left: 15px;}
+.avacat{float: left; display: inline-block; width: 45px;}
+	
+.user-ava	{float: left;width: 11%;text-align: center;}
+.user-ava img	{border-radius: 50%;border: 3px solid #e3e4e8;}
+ 
+.h-home {clear: both;font-size: 18px;color: #919191;margin: 5px 0 5px 0;}
+.h-qa{clear: both;margin-bottom: 5px;}
+.h-qa a	{font-size: 16px;}
+	
+	
+.cat-title{font-size: 16px;padding: 2px 4px;font-weight: 600;position: absolute;color: #fff;margin-left: 5px;background-color: rgba(0,0,0,0.6);}
+.cat-num{padding: 2px 4px;font-size: 16px;float: right;position: absolute;color: #fff;right: 5px;background-color: rgba(0,0,0,0.6);}
+.logo-home{width: 100%;}
+.category-description {margin-top: -25px;font-size: 1em;color: #fff;position: absolute;margin-left: 5px;background-color: rgba(0,0,0,0.6);}
+	
+#list-area {margin-bottom: 20px;}
+.avacat .avatar {width: 24px;height: 24px;border: 3px solid #e3e4e8;}
+.number {margin: 0 10px 0 2px;}
+.stat .fa {color:#667d99;}
+hr {width: 70%;margin-left: 18%;}
+}
+/*end категории*/
