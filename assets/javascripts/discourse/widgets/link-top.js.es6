@@ -11,7 +11,7 @@ export default createWidget('link-top', {
   var ava;
  
   $.ajax({
-  url: "/top.json",
+  url: "/top/weekly.json",
   dataType: 'json',
   async: false,
   success: function(data) {
