@@ -1,5 +1,8 @@
-# The home category
+# Category Page Plugin
 Change the category page to suit your needs (one option)...
+
+What it does: completely changes the design on this page.
+
 
 Demo: https://toxu.ru/categories
 
