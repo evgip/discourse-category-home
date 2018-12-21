@@ -3,7 +3,7 @@
 # version: 0.0.1
 # authors: Evg
 
-register_asset "stylesheets/portals.scss"
+register_asset "stylesheets/portal.scss"
 
 enabled_site_setting :show_private_categories
 
