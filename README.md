@@ -16,7 +16,9 @@ Additional fields in category:
 
 ## Customization
 
-'desktop category page style' - Categories and Latest Topics
+***desktop category page style*** - Categories and Latest Topics
+
+_Not for the mobile version!_
 
 ## How to Install this Plugin
 
