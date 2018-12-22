@@ -40,21 +40,24 @@ export default createWidget('link-top', {
  
  
  var topics = data.topic_list.topics;
+ var id;  
  var title;
  var slug;
  
  for (var t = 0; t < topics.length; t++) {
  if(t >4) break;  
+ id = topics[t].id;  
  title = topics[t].title;
  slug = topics[t].slug;
  
-  contents.push( new RawHtml({ html: ` <div class="h-qa">${chevron}  <a href="/t/${slug}">${title}</a></div>`})); 
+   contents.push( new RawHtml({ html: `<div class="h-qa">${chevron}  <a href="/t/${slug}/${id}">${title}</a></div>`})); 
    
- 
-  }
+   }
  
  
  }
  });
- return contents;
-}});
+    
+  return contents;
+
+  }});
