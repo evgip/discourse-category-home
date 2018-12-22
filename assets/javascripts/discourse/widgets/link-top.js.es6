@@ -26,7 +26,7 @@ export default createWidget('link-top', {
  contents.push( new RawHtml({ html: ` <div class="h-home">${top_writers}</div>`})); 
   
  for (var t = 0; t < users.length; t++) {
- if(t >8) break;  
+ if(t > 8) break;  
  username = users[t].username;
  ava = users[t].avatar_template;
  const avatar_template = ava.replace('{size}', '45');
@@ -43,7 +43,7 @@ export default createWidget('link-top', {
  var slug;
  
  for (var t = 0; t < topics.length; t++) {
- if(t >4) break;  
+ if(t > 4) break;  
  id = topics[t].id;  
  title = topics[t].title;
  slug = topics[t].slug;
