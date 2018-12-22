@@ -25,7 +25,6 @@ export default createWidget('link-top', {
  
  contents.push( new RawHtml({ html: ` <div class="h-home">${top_writers}</div>`})); 
   
- 
  for (var t = 0; t < users.length; t++) {
  if(t >8) break;  
  username = users[t].username;
@@ -34,10 +33,9 @@ export default createWidget('link-top', {
 
  contents.push( new RawHtml({ html: ` <div class="user-ava"><a href="u/${username}"><img src="${avatar_template}" alt="${username}" width="45" class="logo-ava"><br> ${username}</a></div>`})); 
    
- }
+   }
  
-  contents.push( new RawHtml({ html: `<div class="h-home"><br />${best_theme}</div>`})); 
- 
+ contents.push( new RawHtml({ html: `<div class="h-home"><br />${best_theme}</div>`})); 
  
  var topics = data.topic_list.topics;
  var id;  
@@ -54,10 +52,9 @@ export default createWidget('link-top', {
    
    }
  
- 
  }
  });
     
   return contents;
 
-  }});
+ }});
