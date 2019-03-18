@@ -13,7 +13,10 @@ after_initialize do
   add_to_serializer(:listable_topic, :include_excerpt?) { true }
   
   # add info category
-  add_to_serializer(:basic_category, :categorimg, false) { object.custom_fields['categorimg'] }
-  add_to_serializer(:basic_category, :categordiscr, false) { object.custom_fields['categordiscr'] }
+   Site.preloaded_category_custom_fields << "categorimg" if Site.respond_to? :preloaded_category_custom_fields 
+   Site.preloaded_category_custom_fields << "categordiscr" if Site.respond_to? :preloaded_category_custom_fields 
+  
+   add_to_serializer(:basic_category, :categorimg, false) { object.custom_fields['categorimg'] }
+   add_to_serializer(:basic_category, :categordiscr, false) { object.custom_fields['categordiscr'] }
 
 end
