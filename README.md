@@ -15,7 +15,6 @@ Additional fields in category:
 * categorimg - the second image used on the category page
 * categordiscr - short description of the category
 
-<img src="https://toxu.ru/uploads/default/original/2X/f/f42ae7170027be7aa7ff205646c7ce4ede9bf5a8.png" alt="toxu-cat-2">
 
 ## Customization
 
