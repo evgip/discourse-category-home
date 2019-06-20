@@ -3,9 +3,6 @@ Change the category page to suit your needs (one option)...
 
 What it does: completely changes the design on this page.
 
-
-Demo: https://toxu.ru/categories
-
 <img src="https://toxu.ru/uploads/default/original/2X/c/c4a02ab0aff19105103ce95aee8375b2c0a20044.png" alt="toxu-cat">
 
 Languages: English, Russian
